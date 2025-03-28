@@ -1,0 +1,20 @@
+{
+  "name": "node_express",
+  "version": "1.0.0",
+  "description": "learning nodes &amp; express js. this repo contains things i have learnt.",
+  "main": "index.js",
+  "type":"commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prabeenragupathi/node_express_notes.git"
+  },
+  "author": "prabeen_ragupathi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prabeenragupathi/node_express_notes/issues"
+  },
+  "homepage": "https://github.com/prabeenragupathi/node_express_notes#readme"
+}

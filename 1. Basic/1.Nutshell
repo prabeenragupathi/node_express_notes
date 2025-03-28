@@ -1,0 +1,8 @@
+1.Events - EventEmitter
+Events emitter are use to register a new event & call that across modules.
+
+on() or addListener() method do the same function to register a new event.
+emit() is use to call the registered event.
+
+we don't offen create a new event classes. we do, create a one single class that manages the events for certain things.
+
