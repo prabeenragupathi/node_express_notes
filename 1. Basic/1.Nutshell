@@ -6,3 +6,7 @@ emit() is use to call the registered event.
 
 we don't offen create a new event classes. we do, create a one single class that manages the events for certain things.
 
+
+2.HTTP Server
+we use http module to create a server. Inside http module we have method 'creatServer()' to creat a web server.
+
