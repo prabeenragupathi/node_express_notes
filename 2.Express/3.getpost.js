@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 // ? just simple requestin handling with small example
-const courses = {
+let courses = {
   1: { id: 1, name: "Front end" },
   2: { id: 2, name: "Back end" },
   3: { id: 3, name: "Full Stack" },
@@ -23,7 +23,7 @@ app.get("/api/courses/:id", (req, res) => {
 
   if (!courseObject)
     res.status(404).send(`Course not found for the id ${req.params.id}`);
-  res.send(JSON.stringify(courseObject));
+  res.send(courseObject);
 });
 
 //? api post request to add new course in courses list
@@ -46,7 +46,38 @@ app.post("/api/course", (req, res) => {
 //? put request to update course
 app.put("/api/course/:id", (req, res) => {
   const { id } = req.params;
-  
+  const { name } = req.body;
+  let data = courses[id];
+
+  if (!data) {
+    res.status(404).send("Course not found");
+    return;
+  }
+
+  if (!name) {
+    res.status(404).send("Name of course is must");
+    return;
+  }
+
+  data = { ...data, name };
+  courses[id] = data;
+
+  res.status(200).send(data);
 });
 
+//? delete request
+app.delete("/api/course/:id", (req, res) => {
+  const { id } = req.params;
+
+  let data = courses[id];
+
+  if (!data) {
+    res.status(404).send("Course not found");
+    return;
+  }
+
+  delete courses[id];
+
+  res.status(200).send({message: "deleted successfully"})
+});
 app.listen("3000", () => console.log("listening on port 3000"));
