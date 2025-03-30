@@ -1,1 +1,9 @@
 --> It is fast & light weight framework
+--> using express we can easly create a CRUD opeations
+    -->Post
+    -->Get
+    -->Put
+    -->Delete
+--> dynamic route has values in request params
+--> query params value is inside in request query
+--> request body values inside in reequest body 

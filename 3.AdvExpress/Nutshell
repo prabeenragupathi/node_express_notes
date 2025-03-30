@@ -1,0 +1,9 @@
+--> Middleware is a kind of function which execute when the node server is started
+--> it executes only in sequence manner.
+--> (req, res, next) => {} - this is the syntax of custom middleware
+    the req & res cycle shoule be done then only the middleware go to next middleware process. the 3rd param 'next' function will 
+    close the current middleware and then start executing the next middleware in a sequence manner.
+
+--> TEMPLATE ENGINES
+--> it is used to return data with some html structure
+--> we use pug lib to create a html template
