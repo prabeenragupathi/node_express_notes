@@ -2,3 +2,9 @@
 --> connect to the database
 --> create schema
 --> create model
+
+2. Populate()
+--> here we refer a document. to get the refered document details we use populate() function to get the document details
+--> we need to add the document key type as ObjectId,
+    eg,
+    author: {type: mongoose.Schema.Types.ObjecetId, ref: 'collection name'}
