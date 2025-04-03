@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/prabeenragupathi/node_express_notes#readme",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "express": "^4.21.2",
     "joi": "^17.13.3",
+    "lodash": "^4.17.21",
     "mongoose": "^8.13.1",
     "node_express": "file:",
     "pug": "^3.0.3"
