@@ -19,6 +19,7 @@
   "homepage": "https://github.com/prabeenragupathi/node_express_notes#readme",
   "dependencies": {
     "express": "^4.21.2",
+    "joi": "^17.13.3",
     "mongoose": "^8.13.1",
     "node_express": "file:",
     "pug": "^3.0.3"
